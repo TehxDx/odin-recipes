@@ -4,53 +4,80 @@
         <!-- Setting charset -->
         <meta charset="utf-8">
         <!-- Setting page title -->
-        <title>Chocolate Mug Cake</title>
+        <title>Microwave Chocolate Mug Cake</title>
+        <!-- Setting external CSS -->
+        <link rel="stylesheet" href="../resources/recipe.css">
+        <!-- Adding google font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
     </head>
     <body>
-        <h1>Microwave Chocolate Mug Cake</h1>
-        <img src="../images/chocmug.jpg">
-
-        <h3>Description</h3>
-        <p>
-            This is my own version of the chocolate microwave mug cake. This chocolaty fudgy treat is truly decadent and 
-            great for nights when I need a yummy dessert that is ready in less than 10 minutes! Chocolate chips make this recipe even better.
-        </p>
-
-        <h3>Estimated Times</h3>
-        <ul>
-            <li><strong>Prep</strong>: 5 mins</li>
-            <li><strong>Cook</strong>: 2 mins</li>
-            <li><strong>Total</strong>: 7 mins</li>
-            <li><strong>Servings</strong>: 1</li>
-        </ul>
-
-        <h3>Ingredients</h3>
-        <ul>
-            <li>¼ cup all-purpose flour</li>
-            <li>¼ cup white sugar</li>
-            <li>2 tablespoons unsweetened cocoa powder</li>
-            <li>⅛ teaspoon baking soda</li>
-            <li>⅛ teaspoon salt</li>
-            <li>3 tablespoons milk</li>
-            <li>2 tablespoons canola oil</li>
-            <li>1 tablespoon water</li>
-            <li>¼ teaspoon vanilla extract</li>
-        </ul>
-
-        <h3>Directions</h3>
-        <ol>
-            <li>
-                Mix flour, sugar, cocoa powder, baking soda, 
-                and salt in a large microwave-safe mug; stir in milk, canola oil, water, and vanilla extract.
-            </li>
-            <li>
-                Cook in microwave until cake is done in the middle, about 1 minute 45 seconds.
-            </li>
-        </ol>
-
-        <p>
-            <!-- Linking back to homepage -->
-            <a href="../index.html">View more Recipes</a>
-        </p>
+        <header>
+            <a href="../index.html">Home</a>
+        </header>
+        <div class="container">
+            <!--
+                Specific font for header title
+            -->
+            <h1 class="welcome">Microwave Chocolate Mug Cake</h1>
+            <!--
+                Picture of Recipe embed into DIV background
+            -->
+            <div class="picture" style="background-image: url('../images/chocmug.jpg')"></div>
+            <div style="display: block; width: 50%; margin-left: auto; margin-right: auto;">
+                <h3 class="welcome">Description</h3>
+                <p>
+                    This is my own version of the chocolate microwave mug cake. This chocolaty fudgy treat is truly decadent and 
+                    great for nights when I need a yummy dessert that is ready in less than 10 minutes! Chocolate chips make this recipe even better.
+                </p>
+            </div>
+            <!--
+                HR to breakup content
+            -->
+            <hr>
+            <!--
+                This div is set to flex, which will allow the external CSS to be set side by side
+            -->
+            <div style="width: 100%; height: 100%; display: flex;">
+                <div class="ingredients">
+                    <h3 class="welcome"><u>Ingredients</u></h3>
+                    <ul>
+                        <li>¼ cup all-purpose flour</li>
+                        <li>¼ cup white sugar</li>
+                        <li>2 tablespoons unsweetened cocoa powder</li>
+                        <li>⅛ teaspoon baking soda</li>
+                        <li>⅛ teaspoon salt</li>
+                        <li>3 tablespoons milk</li>
+                        <li>2 tablespoons canola oil</li>
+                        <li>1 tablespoon water</li>
+                        <li>¼ teaspoon vanilla extract</li>
+                    </ul>
+                </div>
+                <div class="times">
+                    <h3 class="welcome"><u>Estimated Times</u></h3>
+                    <ul>
+                        <li><strong>Prep</strong>: 5 mins</li>
+                        <li><strong>Cook</strong>: 2 mins</li>
+                        <li><strong>Total</strong>: 7 mins</li>
+                        <li><strong>Servings</strong>: 1</li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+                HR to breakup content
+            -->
+            <hr>
+            <div class="width: 100%;">
+                <h3 class="welcome"><u>Directions</u></h3>
+                <ol>
+                    <li>
+                        Mix flour, sugar, cocoa powder, baking soda, 
+                        and salt in a large microwave-safe mug; stir in milk, canola oil, water, and vanilla extract.
+                    </li>
+                    <li>
+                        Cook in microwave until cake is done in the middle, about 1 minute 45 seconds.
+                    </li>
+                </ol>
+            </div>
+        </div>
     </body>
 </html>

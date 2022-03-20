@@ -1,0 +1,93 @@
+/*
+    Setup body HTML with SVG background
+*/
+body {
+    background-color: white;
+    background-image: url('../images/Circles.svg');
+    background-size: 100% auto;
+}
+
+/*
+    Reused CSS from Appletri  (header only)
+    Credit: https://github.com/Appletri/odin-recipes/
+*/
+header {
+    transform: translateY(-2.3rem);
+    text-align: center;
+    position: fixed;
+    height: 4rem;
+    width:8rem;
+    line-height: 5.5rem;
+    left:0px;
+    top:0px;
+    background-color: white;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 80%;
+    border: 5px solid white;
+}
+
+
+/*
+    Container for Recipe Page
+*/
+.container {
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 10px #316a8b);
+}
+
+
+/*
+    Recipe page header
+*/
+.welcome {
+    margin: auto;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 48px;
+    font-family: 'Pacifico', sans-serif;
+}
+
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 268px;
+    width: 400px;
+    background-repeat: no-repeat;
+    border-radius: 300px;
+    outline: 2px dashed white;
+    outline-offset: -4px;
+    filter: drop-shadow(0px 0px 15px #1d4268)
+}
+
+/*
+    Styled HR for page
+*/
+hr {
+    border: 2px solid #0e2a47;
+}
+
+/*
+    Recipe Times & Ingredients side by side
+*/
+.ingredients {
+    vertical-align: top;
+    width: 50%; 
+    float: left; 
+}
+
+.times {
+    vertical-align: top;
+}
+
+/*
+    Adding padding to li
+*/
+li {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
